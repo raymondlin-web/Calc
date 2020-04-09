@@ -1,17 +1,26 @@
-var number = number;
-function sqrethis(number) {
+var perfButt = document.getElementById("PERFECT");
+var fortButt = document.getElementById("fortune-button")
+var sqrethisElement = document.getElementById("sqrethis");
+var nameInputElement = document.getElementById("fortname")
+
+perfButt.addEventListener("click", sqrethis);
+fortButt.addEventListener("click", future)
+
+function sqrethis() {
+  var num = sqrethisElement.value;
   console.log(number*number);
 }
-var name = fortname;
-var fortune = name.charAt(0);
-function future(name) {
-  if (fortune < "G");
-    console.log("Good luck with life");
-    else if (fortune < "N");
+function future() {
+  if (fortune < "G") {
+      console.log("Good luck with life");
+    }
+  else if (fortune < "N") {
       console.log("Bad luck incoming");
-    else if (fortune < "T");
+    }
+  else if (fortune < "T") {
       console.log("Wow great luck for you");
-    else {
+    }
+  else {
       console.log("Pretty OK for now");
     }
 }
